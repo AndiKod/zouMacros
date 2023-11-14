@@ -1,0 +1,13 @@
+// Interactive CDN links add
+
+{% macro pkg(pkg) %}
+
+  {% if pkg === 'bulma' %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  {% endif %}
+
+  {% if pkg === 'pocketbase' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pocketbase/0.15.1/pocketbase.umd.js" integrity="sha512-fY0Tp3wfjy2SxoxBYTnTlfsVeZq8J5/5aWY9t12zjGqAaIYPDFgWBvNZjgVkhW2UE3B8BLHsydwhkIGIM+E7yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
+
+{% endmacro %}
