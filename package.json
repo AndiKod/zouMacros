@@ -1,0 +1,12 @@
+{
+  "name": "zoumacros",
+  "version": "1.0.0",
+  "description": "Nunjucks macros to be imported in other projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrei Curelaru",
+  "license": "ISC"
+}
