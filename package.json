@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Andrei Curelaru",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "zoumacros": "github:AndiKod/zoumacros"
+  }
 }
