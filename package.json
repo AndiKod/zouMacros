@@ -1,15 +1,19 @@
 {
   "name": "zoumacros",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nunjucks macros to be imported in other projects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndiKod/zouMacros"
+  },
+  "files": [
+    "./lib"
+  ],
   "author": "Andrei Curelaru",
-  "license": "ISC",
-  "devDependencies": {
-    "zoumacros": "github:AndiKod/zoumacros"
-  }
+  "license": "ISC"
 }
