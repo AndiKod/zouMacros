@@ -12,21 +12,21 @@ npm i zoumacros --save-dev
 
 ### Modules
 
-_...obviously just a beginning, to start the collection._
+_...Obviously just a beginning, to start the collection._
 
 ## CDN Loader
 
 It replace the call to the macro with the CDN links of the package. Path depends on the layout file calling it. When it comes to CSS frameworks, that's an easy quick way to prototype with and discover, yet installing the full SASS version when available a more powerfull way.
 
-Anyway, have fun.
+_In the head section of a layout/page:_
 
 ```
-{# some .njk layout, in the head section #}
-
 {% import '../../node_modules/zoumacros/lib/cdn.njk' as cdn; %}
-{{ cdn.pkg('bulma') }}
-{{ cdn.pkg('alpinejs') }}
+{{ cdn.pkg('chota') }}
+{{ cdn.pkg('hyperscript') }}
 ```
+
+_...and have fun._
 
 ## Available Packages
 
@@ -34,9 +34,9 @@ To kick-off the list, we have:
 
 ### CSS
 
+- [Chota](https://jenil.github.io/chota/#docs)
 - [Bulma](https://bulma.io/documentation/overview/classes/)
 - [BonsaiCSS](https://www.bonsaicss.com/)
-- [Cutestrap](https://www.cutestrap.com/)
 - [Bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/)
 
 ### Javascript
@@ -51,4 +51,7 @@ For SCSS, Tailwind, TS... just go Zou!
 #### Changelog
 
 1.0.2
-Hyperscript and htmX added
+Hyperscript and htmX added to the CDN-loader marcro.
+
+1.1.2
+CutestrapCSS replaced by Chota in CDN-loader, as it wasn't an official CDN.
