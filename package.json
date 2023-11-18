@@ -1,6 +1,6 @@
 {
   "name": "zoumacros",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nunjucks macros to be imported in other projects.",
   "main": "index.js",
   "scripts": {

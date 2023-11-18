@@ -5,7 +5,7 @@
   {# --- CSS --- #}
 
   {% if pkg === 'bonsai' %}
-		<link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet">
   {% endif %}
 
   {% if pkg === 'bulma' %}
@@ -18,17 +18,25 @@
   {% endif %}
 
   {% if pkg === 'cutestrap' %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cutestrap/1.3.1/css/cutestrap.min.css" integrity="sha512-gYANCBpCovPa8X2ST3v2NCiTiOgT4zK5ansBqaPcNenb0UpOY3YwLeATp/5GgiDI8hwtjNhtxowNLyngs4A11Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cutestrap/1.3.1/css/cutestrap.min.css" integrity="sha512-gYANCBpCovPa8X2ST3v2NCiTiOgT4zK5ansBqaPcNenb0UpOY3YwLeATp/5GgiDI8hwtjNhtxowNLyngs4A11Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   {% endif %}
-  
+
   {# --- Javascript --- #}
 
   {% if pkg === 'alpinejs' %}
     <script src="//unpkg.com/alpinejs" defer></script>
-  {% endif %} 
+  {% endif %}
 
   {% if pkg === 'pocketbase' %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pocketbase/0.15.1/pocketbase.umd.js" integrity="sha512-fY0Tp3wfjy2SxoxBYTnTlfsVeZq8J5/5aWY9t12zjGqAaIYPDFgWBvNZjgVkhW2UE3B8BLHsydwhkIGIM+E7yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
+
+  {% if pkg === 'hyperscript' %}
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+  {% endif %}
+
+  {% if pkg === 'htmx' %}
+    <script src="https://unpkg.com/htmx.org@1.9.8" integrity="sha384-rgjA7mptc2ETQqXoYC3/zJvkU7K/aP44Y+z7xQuJiVnB/422P/Ak+F/AqFR7E4Wr" crossorigin="anonymous"></script>
   {% endif %}
 
 {% endmacro %}
