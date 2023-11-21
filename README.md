@@ -34,15 +34,21 @@ To kick-off the list, we have:
 
 ### CSS
 
-- [Chota](https://jenil.github.io/chota/#docs)
-- [Bulma](https://bulma.io/documentation/overview/classes/)
-- [BonsaiCSS](https://www.bonsaicss.com/)
-- [Bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/)
+- [chota](https://jenil.github.io/chota/#docs)
+- [bulma](https://bulma.io/documentation/overview/classes/)
+- [bonsai](https://www.bonsaicss.com/)
+- [bootstrap](https://getbootstrap.com/docs/5.3/layout/containers/)
+- [purecss](https://purecss.io/)
+- [openprops](https://open-props.style/)
+- [openprops-normalize](https://codepen.io/argyleink/pen/KKvRORE)
+- [openprops-buttons](https://codepen.io/argyleink/pen/KKvRORE)
+- [openprops-masks](https://open-props.style/#masks)
+- [openprops-corners](https://open-props.style/#masks)
 
 ### Javascript
 
-- [AlpineJS](https://alpinejs.dev/essentials/state)
-- [PocketBase](https://pocketbase.io/docs/)
+- [alpinejs](https://alpinejs.dev/essentials/state)
+- [pocketbase](https://pocketbase.io/docs/)
 - [hyperscript](https://hyperscript.org/docs/#basics)
 - [htmx](https://htmx.org/docs/#ajax)
 
@@ -50,8 +56,12 @@ For SCSS, Tailwind, TS... just go Zou!
 
 #### Changelog
 
-1.0.2
+1.0.2: 
 Hyperscript and htmX added to the CDN-loader marcro.
 
-1.1.2
+1.1.2: 
 CutestrapCSS replaced by Chota in CDN-loader, as it wasn't an official CDN.
+
+1.2.0: 
+PureCSS & OpenProps familly added in CDN-loader
+  

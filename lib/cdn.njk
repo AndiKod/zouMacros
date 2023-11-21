@@ -21,6 +21,32 @@
     <link rel="stylesheet" href="https://unpkg.com/chota@latest"/>
   {% endif %}
 
+
+  {% if pkg === 'purecss' %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  {% endif %}
+
+
+  {% if pkg === 'openprops' %}
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+  {% endif %}
+
+  {% if pkg === 'openprops-masks' %}
+    <link rel="stylesheet" href="https://unpkg.com/open-props/masks.edges.min.css"/>
+  {% endif %}
+
+  {% if pkg === 'openprops-corners' %}
+    <link rel="stylesheet" href="https://unpkg.com/open-props/masks.corner-cuts.min.css"/>
+  {% endif %}
+
+  {% if pkg === 'openprops-normalize' %}
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+  {% endif %}
+
+  {% if pkg === 'openprops-buttons' %}
+    <link rel="stylesheet" href="https://unpkg.com/open-props/buttons.min.css"/>
+  {% endif %}
+
   {# --- Javascript --- #}
 
   {% if pkg === 'alpinejs' %}
