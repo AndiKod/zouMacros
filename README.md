@@ -1,6 +1,6 @@
 # zouMacros
 
-Nunjucks macros to be imported in other projects, made for Zou!JS.
+Nunjucks macros to be imported in other projects, made for [Zou!JS](https://zoujs.vercel.app).
 
 ## Install
 
@@ -21,8 +21,9 @@ It replace the call to the macro with the CDN links of the package. Path depends
 _In the head section of a layout/page:_
 
 ```
-{% import '../../node_modules/zoumacros/lib/cdn.njk' as cdn; %}
-{{ cdn.pkg('chota') }}
+{% import 'node_modules/zoumacros/lib/cdn.njk' as cdn; %}
+
+{{ cdn.pkg('openprops') }}
 {{ cdn.pkg('hyperscript') }}
 ```
 
@@ -54,6 +55,24 @@ To kick-off the list, we have:
 
 For SCSS, Tailwind, TS... just go Zou!
 
+## Embed YouTube Video
+
+It replace the shortcode with a responsive, container's full width iframe with the video corresponding to the provided ID.
+
+
+_Anywhere in the template, generally on top:_
+
+```
+{% import 'node_modules/zoumacros/lib/embed.njk' as embed; %}
+```
+
+_In the place where you want to place the video:_
+
+```
+{{ embed.yt('6-MlH1t8t9I') }}
+```
+
+
 #### Changelog
 
 1.0.2: 
@@ -64,4 +83,7 @@ CutestrapCSS replaced by Chota in CDN-loader, as it wasn't an official CDN.
 
 1.2.0: 
 PureCSS & OpenProps familly added in CDN-loader
+
+1.3.0:
+Initiate a new Macro (embed) with YouTube videos. No more '../../' normally needed to load up things.
   
