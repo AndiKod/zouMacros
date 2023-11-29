@@ -18,13 +18,12 @@ _...Obviously just a beginning, to start the collection._
 
 It replace the call to the macro with the CDN links of the package. Path depends on the layout file calling it. When it comes to CSS frameworks, that's an easy quick way to prototype with and discover, yet installing the full SASS version when available a more powerfull way.
 
-_In the head section of a layout/page:_
+_In the head section of something like src/layouts/base.nkj:_
 
 ```
-{% import 'node_modules/zoumacros/lib/cdn.njk' as cdn; %}
+{% import '../../node_modules/zoumacros/lib/cdn.njk' as cdn; %}
 
-{{ cdn.pkg('openprops') }}
-{{ cdn.pkg('hyperscript') }}
+{{ cdn.pkg('alpinejs') }}
 ```
 
 _...and have fun._
@@ -63,7 +62,7 @@ It replace the shortcode with a responsive, container's full width iframe with t
 _Anywhere in the template, generally on top:_
 
 ```
-{% import 'node_modules/zoumacros/lib/embed.njk' as embed; %}
+{% import '../../node_modules/zoumacros/lib/embed.njk' as embed; %}
 ```
 
 _In the place where you want to place the video:_
@@ -85,5 +84,5 @@ CutestrapCSS replaced by Chota in CDN-loader, as it wasn't an official CDN.
 PureCSS & OpenProps familly added in CDN-loader
 
 1.3.0:
-Initiate a new Macro (embed) with YouTube videos. No more '../../' normally needed to load up things.
+Initiate a new Macro (embed) with YouTube videos. 
   
